@@ -11,7 +11,7 @@ body {
 
 nav {
     width: 100%;
-    height: 60px;
+    height: 10vh;
     background-color: #000;
     display: flex;
     justify-content: space-between;
@@ -47,8 +47,8 @@ nav a:hover {
 }
 
 main {
-    width: 75vw;
-    height: 80vh;
+    width: 70vw;
+    height: 75vh;
     margin: 0 auto;
 }
 
@@ -70,7 +70,7 @@ p {
 footer {
     display: flex;
     justify-content: center;
-    height: 15vh;
+    height: 14vh;
     background-color: #000;
     color: #fff;
     align-items: center;
@@ -85,44 +85,44 @@ footer span {
     text-align: center;
 }
 
+/* FORM STYLES */
 form {
-    margin-top: 10px;
-    background-color: azure;
+    width: 450px;
+    margin: 0 auto;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 1em;
 }
 
 .form-group label {
-    margin-top: 1.5em;
-}
-
-.form-group input, .form-group textarea {
-    width: 50%;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 5px;
-}
-
-.btn {
-    margin: 1em;
-    cursor: pointer;
-    padding: 8px 24px;
-    background-color: white;
-    border: 1px solid azure;
-    border-radius: 5px;
-    max-width: 100px;
-    transition: .4s;
-    font-size: 1em;
     font-weight: bold;
-    background-color: bisque;
+    font-size: 0.9em;
+    margin-bottom: 0.4em;
 }
 
-.btn:hover {
-    background-color: yellowgreen;
+.form-group input,
+.form-group textarea {
+    padding: 0.6em;
+    color: #777;
+    font-size: 0.8em;
 }
 
+input[type="submit"] {
+    background-color: #efefef;
+    border: none;
+    padding: 0.6em 1em;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.1em;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+
+input[type="submit"]:hover {
+    color: #d29510;
+    border-color: #d29510;
+    background-color: transparent;
+}
